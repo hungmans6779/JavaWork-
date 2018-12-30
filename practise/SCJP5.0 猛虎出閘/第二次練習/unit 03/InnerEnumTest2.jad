@@ -1,0 +1,104 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/4 ¤U¤È 02:59:27
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   InnerEnumTest2.java
+
+import java.io.PrintStream;
+
+public class InnerEnumTest2
+{
+    public static final class Week extends Enum
+    {
+
+        public static Week[] values()
+        {
+            return (Week[])$VALUES.clone();
+        }
+
+        public static Week valueOf(String s)
+        {
+            return (Week)Enum.valueOf(InnerEnumTest2$Week, s);
+        }
+
+        public static final Week Sunday;
+        public static final Week Monday;
+        public static final Week Tuesday;
+        public static final Week Wednesday;
+        public static final Week Thursday;
+        public static final Week Friday;
+        public static final Week Saturday;
+        private static final Week $VALUES[];
+
+        static 
+        {
+            Sunday = new Week("Sunday", 0);
+            Monday = new Week("Monday", 1);
+            Tuesday = new Week("Tuesday", 2);
+            Wednesday = new Week("Wednesday", 3);
+            Thursday = new Week("Thursday", 4);
+            Friday = new Week("Friday", 5);
+            Saturday = new Week("Saturday", 6);
+            $VALUES = (new Week[] {
+                Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
+            });
+        }
+
+        private Week(String s, int i)
+        {
+            super(s, i);
+        }
+    }
+
+
+    public InnerEnumTest2()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        static class _cls1
+        {
+
+            static final int $SwitchMap$InnerEnumTest2$Week[];
+
+            static 
+            {
+                $SwitchMap$InnerEnumTest2$Week = new int[Week.values().length];
+                try
+                {
+                    $SwitchMap$InnerEnumTest2$Week[Week.Monday.ordinal()] = 1;
+                }
+                catch(NoSuchFieldError nosuchfielderror) { }
+                try
+                {
+                    $SwitchMap$InnerEnumTest2$Week[Week.Tuesday.ordinal()] = 2;
+                }
+                catch(NoSuchFieldError nosuchfielderror1) { }
+                try
+                {
+                    $SwitchMap$InnerEnumTest2$Week[Week.Wednesday.ordinal()] = 3;
+                }
+                catch(NoSuchFieldError nosuchfielderror2) { }
+            }
+        }
+
+        switch(_cls1..SwitchMap.InnerEnumTest2.Week[Week.Monday.ordinal()])
+        {
+        case 1: // '\001'
+            System.out.println("\u661F\u671F\u4E00 \u7334\u5B50\u7A7F\u65B0\u8863");
+            break;
+
+        case 2: // '\002'
+            System.out.println("\u661F\u671F\u4E8C \u7334\u5B50\u53BB\u70E4\u8089");
+            break;
+
+        case 3: // '\003'
+            System.out.println("\u661F\u671F\u4E09 \u7334\u5B50\u53BB\u722C\u5C71");
+            break;
+
+        default:
+            System.out.println("\u4E0D\u77E5\u600E\u9EBC\u4E86....");
+            break;
+        }
+    }
+}

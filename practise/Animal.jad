@@ -1,0 +1,26 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/6/25 ¤W¤È 10:39:15
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   Dog.java
+
+
+class Animal
+{
+
+    Animal()
+    {
+    }
+
+    public int getValue()
+    {
+        return i;
+    }
+
+    public static String run()
+    {
+        return "Animal\u7684run()...";
+    }
+
+    static int i = 10;
+
+}

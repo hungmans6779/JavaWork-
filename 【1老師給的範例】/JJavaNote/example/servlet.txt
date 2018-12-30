@@ -1,0 +1,18 @@
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class ServletName extends HttpServlet{
+	public void service(HttpServletRequest req,HttpServletResponse resp)
+		throws IOException,ServletException{
+
+	}
+	public void doGet(HttpServletRequest req,HttpServletResponse resp)
+		throws IOException,ServletException{
+
+	}
+	public void doPost(HttpServletRequest req,HttpServletResponse resp)
+		throws IOException,ServletException{
+
+	}
+}

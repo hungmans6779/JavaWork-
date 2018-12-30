@@ -1,0 +1,17 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/7/4 ¤W¤È 09:35:22
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   cTest34.java
+
+
+public class cTest34 extends A
+{
+
+    public cTest34()
+    {
+    }
+
+    public static void main(String args[])
+    {
+    }
+}

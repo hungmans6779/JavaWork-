@@ -1,0 +1,21 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/4 ¤W¤È 08:48:57
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   ExtendsTest1.java
+
+import java.io.PrintStream;
+
+public class ExtendsTest1
+{
+
+    public ExtendsTest1()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        Son son = new Son();
+        son.undertaking();
+        System.out.println((new StringBuilder()).append("\u91D1\u984D: ").append(son.money).toString());
+    }
+}

@@ -1,0 +1,35 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/6 ¤U¤È 09:30:17
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   GenericsTest5.java
+
+import java.io.PrintStream;
+import java.util.Iterator;
+import java.util.Vector;
+
+public class GenericsTest5
+{
+
+    public GenericsTest5()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        Vector vector = getVector();
+        System.out.println((new StringBuilder()).append("v \u7684\u5167\u5BB9\u70BA:").append(vector).toString());
+        String s;
+        for(Iterator iterator = vector.iterator(); iterator.hasNext(); System.out.print((new StringBuilder()).append(s).append(",").toString()))
+            s = (String)iterator.next();
+
+    }
+
+    public static Vector getVector()
+    {
+        Vector vector = new Vector();
+        vector.add("Java ");
+        vector.add("Tiger ");
+        vector.add("SCJP 5.0");
+        return vector;
+    }
+}

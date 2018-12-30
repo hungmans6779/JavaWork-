@@ -1,0 +1,19 @@
+import java.util.*;
+public class HashtableTest1
+{
+ public static void main(String argv[])
+ {	
+  Hashtable ht=new Hashtable();
+  ht.put("A","AAAAAAAAAAAAAAAAA");
+  ht.put(new Integer(10),new Integer(20));
+  ht.put("B","BBBBBBBBBBBBBBBBBBBBBBBBBBBB");
+  //Hashtable™∫¡‰≠»§Œvalue§£Ø‡¨Onull
+  //ht.put(null,10);
+  //ht.put("C",null);
+  System.out.println(ht.toString());
+  System.out.println("¡‰≠»A= "+ht.get("A"));
+  System.out.println("¡‰≠»B= "+ht.get("B"));
+  System.out.println("¡‰≠»10= "+ht.get(10));
+  System.out.println("¡‰≠»10= "+ht.get(new Integer(10)));
+ } 
+}

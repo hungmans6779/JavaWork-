@@ -1,0 +1,29 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/8 ¤U¤È 07:15:58
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   Test31.java
+
+import java.io.PrintStream;
+
+public class Test31
+{
+
+    public Test31()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        Character character = Character.valueOf('A');
+        Byte byte1 = Byte.valueOf((byte)10);
+        Short short1 = Short.valueOf((short)10);
+        Integer integer = Integer.valueOf(10);
+        Long long1 = Long.valueOf(10L);
+        Float float1 = Float.valueOf(10F);
+        Double double1 = Double.valueOf(10D);
+        System.out.println("==========================");
+        Long long2 = Long.valueOf(integer.intValue());
+        Long long3 = Long.valueOf(integer.longValue());
+        Integer integer1 = Integer.valueOf(byte1.intValue());
+    }
+}

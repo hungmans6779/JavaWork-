@@ -1,0 +1,26 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/6 ¤U¤È 02:48:47
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   HashSetTest11.java
+
+import java.io.PrintStream;
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class HashSetTest11
+{
+
+    public HashSetTest11()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        HashSet hashset = new HashSet();
+        hashset.add("SCJP");
+        hashset.add("SCWCD");
+        hashset.add("SCBCD");
+        hashset.add("SCMAD");
+        for(Iterator iterator = hashset.iterator(); iterator.hasNext(); System.out.println(iterator.next()));
+    }
+}

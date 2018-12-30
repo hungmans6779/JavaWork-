@@ -1,0 +1,1 @@
+enum Test{ red,eed}

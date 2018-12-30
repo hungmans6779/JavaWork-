@@ -1,0 +1,27 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/8 ¤U¤È 07:00:41
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   Test2.java
+
+import java.io.PrintStream;
+
+public class Test2
+{
+
+    public Test2()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        Integer integer = new Integer(100);
+        Integer integer1 = Integer.valueOf(200);
+        int i = integer.intValue();
+        int j = integer1.intValue();
+        System.out.println((new StringBuilder()).append("i1=").append(i).toString());
+        System.out.println((new StringBuilder()).append("i2=").append(j).toString());
+        Integer integer2 = Integer.valueOf(100);
+        int k = integer2.intValue();
+        System.out.println((new StringBuilder()).append("i3=").append(k).toString());
+    }
+}

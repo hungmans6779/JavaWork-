@@ -1,0 +1,65 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/4 ¤U¤È 04:09:56
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   MyOuterTest1.java
+
+
+public class MyOuterTest1
+{
+    class MyInner2
+    {
+        class MyInnerAgain
+        {
+
+            final MyInner2 this$1;
+
+            MyInnerAgain()
+            {
+                this$1 = MyInner2.this;
+                super();
+            }
+        }
+
+
+        final MyOuterTest1 this$0;
+
+        MyInner2()
+        {
+            this$0 = MyOuterTest1.this;
+            super();
+        }
+    }
+
+    class MyInner1
+    {
+        class MyInnerAgain
+        {
+
+            final MyInner1 this$1;
+
+            MyInnerAgain()
+            {
+                this$1 = MyInner1.this;
+                super();
+            }
+        }
+
+
+        final MyOuterTest1 this$0;
+
+        MyInner1()
+        {
+            this$0 = MyOuterTest1.this;
+            super();
+        }
+    }
+
+
+    public MyOuterTest1()
+    {
+    }
+
+    public static void main(String args[])
+    {
+    }
+}

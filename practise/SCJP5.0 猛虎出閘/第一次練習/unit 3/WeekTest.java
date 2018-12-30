@@ -1,0 +1,4 @@
+enum WeekTest
+{
+ Sunday,Monday
+}

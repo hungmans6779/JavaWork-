@@ -1,0 +1,24 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/7/5 ¤W¤È 01:06:02
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   AwtAppletTest002.java
+
+import java.applet.Applet;
+import java.awt.Button;
+import java.awt.FlowLayout;
+
+public class AwtAppletTest002 extends Applet
+{
+
+    public AwtAppletTest002()
+    {
+    }
+
+    public void init()
+    {
+        setLayout(new FlowLayout(1));
+        add(new Button("One"));
+        add(new Button("Two"));
+        add(new Button("Three"));
+    }
+}

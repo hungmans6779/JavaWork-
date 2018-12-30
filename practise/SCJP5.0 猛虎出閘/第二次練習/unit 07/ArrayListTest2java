@@ -1,0 +1,13 @@
+import java.util.*;
+public class ArrayListTest2
+{
+ public static void main(String argv[])
+ {
+  List<String> al=new ArrayList<String>();
+  al.add("SCJP");
+  al.add("SCWCD");
+  al.add("SCBCD");
+  al.add("SCMAD");
+  ListIterator it=al.listIterator();
+ }
+}

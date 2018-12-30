@@ -1,0 +1,124 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2099/12/31 ¤W¤È 09:43:06
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   NumberGame2.java
+
+import java.io.PrintStream;
+import java.util.Scanner;
+
+public class NumberGame2
+{
+
+    public NumberGame2()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\u6B61\u8FCE\u5149\u81E8\u5927\u7B28\u731C\u6578\u5B57\u904A\u6232,\u904A\u6232\u4E2D\u8F38\u5165\u4E4B\u5B57\u4E32\u8ACB\u4EE5\u5B57\u5143 0~9\u7D44\u6210,\u82E5\u8F38\u51650\u8868\u793A\u653E\u68C4");
+        for(int i = 1; i == true; i = scanner.nextInt())
+        {
+            System.out.print("\n\u8ACB\u8F38\u5165\u6578\u5B57\u5B57\u4E32\u7684\u9577\u5EA6-->");
+            int j = scanner.nextInt();
+            String s = new String();
+            for(int k = 0; k < j; k++)
+            {
+                int l = (int)(Math.random() * 10D);
+                int j1 = 0;
+                do
+                {
+                    if(j1 >= s.length())
+                        break;
+                    if(l == s.codePointAt(j1) - 48)
+                    {
+                        k--;
+                        break;
+                    }
+                    j1++;
+                } while(true);
+                if(j1 == s.length())
+                    s = (new StringBuilder()).append(s).append(String.valueOf(l)).toString();
+            }
+
+            String s1 = new String();
+            int i1 = 1;
+            do
+            {
+                if(s1.equals(s))
+                    break;
+                int k1 = 0;
+                int l1 = 0;
+                System.out.print((new StringBuilder()).append("\n\u7B2C").append(i1++).append("\u6B21\u8F38\u5165-->").toString());
+                s1 = scanner.next();
+                if(s1.equals("0000"))
+                {
+                    System.out.println((new StringBuilder()).append("\u6B63\u78BA\u7B54\u6848:").append(s).toString());
+                    break;
+                }
+                if(s1.length() != s.length())
+                {
+                    System.out.println("\n\u8F38\u5165\u5B57\u6578\u932F\u8AA4,\u8ACB\u91CD\u65B0\u8F38\u5165");
+                } else
+                {
+                    int i2 = 0;
+                    do
+                    {
+                        if(i2 >= s.length())
+                            break;
+                        if(s1.codePointAt(i2) < 48 || s1.codePointAt(i2) > 57)
+                        {
+                            System.out.println("\n\u8F38\u5165\u6578\u5B57\u932F\u8AA4,\u8ACB\u91CD\u65B0\u8F38\u5165");
+                            break;
+                        }
+                        i2++;
+                    } while(true);
+label0:
+                    for(int j2 = 0; j2 < s1.length() - 2; j2++)
+                    {
+                        int i3 = j2;
+                        do
+                        {
+                            if(i3 >= s1.length() - 2)
+                                continue label0;
+                            if(s1.codePointAt(j2) == s1.codePointAt(i3 + 1))
+                            {
+                                System.out.println("\n\u8F38\u5165\u6578\u5B57\u4E0D\u53EF\u91CD\u8907,\u8ACB\u91CD\u65B0\u8F38\u5165");
+                                continue label0;
+                            }
+                            i3++;
+                        } while(true);
+                    }
+
+                    for(int k2 = 0; k2 < s.length(); k2++)
+                        if(s1.codePointAt(k2) == s.codePointAt(k2))
+                            k1++;
+
+label1:
+                    for(int l2 = 0; l2 < s.length(); l2++)
+                    {
+                        int j3 = 0;
+                        do
+                        {
+                            if(j3 >= s.length())
+                                continue label1;
+                            if(l2 != j3 && s1.codePointAt(l2) == s.codePointAt(j3))
+                            {
+                                l1++;
+                                continue label1;
+                            }
+                            j3++;
+                        } while(true);
+                    }
+
+                    if(k1 == s.length())
+                        System.out.println("\n\u606D\u79A7\u4F60\u7B54\u5C0D\u4E86!");
+                    else
+                        System.out.println((new StringBuilder()).append("\u672C\u6B64\u6AA2\u6E2C\u7D50\u679C:").append(k1).append("A ").append(l1).append("B").toString());
+                }
+            } while(true);
+            System.out.print("\n\u63091\u7E7C\u7E8C,\u6309\u5176\u4ED6\u9375\u7D50\u675F-->");
+        }
+
+    }
+}

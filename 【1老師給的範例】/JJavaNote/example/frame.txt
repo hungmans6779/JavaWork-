@@ -1,0 +1,16 @@
+imoprt java.awt.*;
+import java.awt.event.*;
+
+public class ClassName extends Frame{
+	ClassName(){
+		setBounds();
+		setResizable();
+		setTitle();
+		
+		addWindowListener(new WindowAdapter(){
+			public void windowClosing(WindowEvent e){
+	
+			}
+		});
+	}
+}

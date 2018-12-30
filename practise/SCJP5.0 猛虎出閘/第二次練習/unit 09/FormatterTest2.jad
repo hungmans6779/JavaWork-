@@ -1,0 +1,25 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/10 ¤U¤È 10:26:12
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   FormatterTest2.java
+
+import java.io.PrintStream;
+import java.util.Formatter;
+
+public class FormatterTest2
+{
+
+    public FormatterTest2()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        StringBuffer stringbuffer = new StringBuffer("\u5713\u5468");
+        Formatter formatter = new Formatter(stringbuffer);
+        formatter.format("\u7387=%f", new Object[] {
+            Double.valueOf(3.1415926535897931D)
+        });
+        System.out.println(stringbuffer);
+    }
+}

@@ -1,0 +1,30 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/8/30 ¤W¤È 10:45:24
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   appletTest1.java
+
+import java.applet.Applet;
+import java.awt.Graphics;
+
+public class appletTest1 extends Applet
+{
+
+    public appletTest1()
+    {
+    }
+
+    public void init()
+    {
+    }
+
+    public void start()
+    {
+    }
+
+    public void paint(Graphics g)
+    {
+        g.drawLine(40, 30, 100, 30);
+        g.drawLine(40, 60, 100, 60);
+        g.drawString("Hello,Java World", 50, 50);
+    }
+}

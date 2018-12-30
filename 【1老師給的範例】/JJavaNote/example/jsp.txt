@@ -1,0 +1,8 @@
+<Html>
+	<%@
+		page	pageContent="text/html;charset=Big5"
+	%>
+	<Title></Title>
+	<Body>
+	</Body>
+</Html>

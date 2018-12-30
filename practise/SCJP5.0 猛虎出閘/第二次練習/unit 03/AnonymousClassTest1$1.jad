@@ -1,0 +1,25 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/4 ¤U¤È 05:24:05
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   AnonymousClassTest1.java
+
+import java.io.PrintStream;
+
+static final class AnonymousClassTest1$1
+    implements Pet
+{
+
+    public void skill()
+    {
+        System.out.println("\u6211\u6703\u63E1\u624B");
+    }
+
+    public void move()
+    {
+        System.out.println("\u6211\u6703\u8DD1\u6B65");
+    }
+
+    AnonymousClassTest1$1()
+    {
+    }
+}

@@ -1,0 +1,39 @@
+<html>
+ <head>
+  <title>first.html</title>
+ </head>
+ <SCRIPT Language="JavaScript">
+  <!--
+   function OpenTop()
+   {
+    top.location="subpage.html";
+   }
+   function OpenSelf()
+   {
+    self.location="subpage.html";
+   }
+   function OpenFrame1()
+   {
+    top.frames(0).location="subpage.html";
+   }
+   function OpenFrame2()
+   {
+    top.frames(1).location="subpage.html";
+   }
+   function OpenFrame3()
+   {
+    top.frames(2).location="subpage.html";
+   }
+  -->
+ </SCRIPT>
+ <body>
+  <center>
+   <h2><font color=navy>第一個子視窗</font></h2><hr>
+   <p><input type="BUTTON" name="b1" value="最上層子視窗開啟subpage.html" onclick="OpenTop()" /></p><br>
+   <p><input type="BUTTON" name="b2" value="在這個子視窗開啟subpage.html" onclick="OpenSelf()" /><br></p>
+   <p><input type="BUTTON" name="b3" value="在第一個子視窗開啟subpage.html" onclick="OpenFrame1()" /></p><br>
+   <p><input type="BUTTON" name="b4" value="在第二個子視窗開啟subpage.html" onclick="OpenFrame2()" /></p><br>
+   <p><input type="BUTTON" name="b5" value="在第三個子視窗開啟subpage.html" onclick="OpenFrame3()" /></p><br>
+  </center>
+ </body>
+</html>

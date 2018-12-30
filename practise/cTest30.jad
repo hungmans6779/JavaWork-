@@ -1,0 +1,33 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/7/2 ¤U¤È 03:59:34
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   cTest30.java
+
+import java.io.PrintStream;
+
+public class cTest30
+{
+
+    public cTest30()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        Integer integer = Integer.valueOf(-128);
+        Integer integer1 = Integer.valueOf(-128);
+        Integer integer2 = Integer.valueOf(-129);
+        Integer integer3 = Integer.valueOf(-129);
+        Integer integer4 = Integer.valueOf(-127);
+        Integer integer5 = Integer.valueOf(-127);
+        Integer integer6 = Integer.valueOf(128);
+        Integer integer7 = Integer.valueOf(128);
+        System.out.println((new StringBuilder()).append("i1==i2==>").append(integer == integer1).toString());
+        System.out.println((new StringBuilder()).append("i3==i4==>").append(integer2 == integer3).toString());
+        System.out.println((new StringBuilder()).append("i5==i6==>").append(integer4 == integer5).toString());
+        System.out.println((new StringBuilder()).append("i7==i8==>").append(integer6 == integer7).toString());
+        Integer integer8 = new Integer(127);
+        Integer integer9 = new Integer(127);
+        System.out.println((new StringBuilder()).append("ii1==ii2==>").append(integer8 == integer9).toString());
+    }
+}

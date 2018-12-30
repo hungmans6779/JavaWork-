@@ -1,0 +1,33 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/3 ¤U¤È 08:44:02
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   ForEachTest1.java
+
+import java.io.PrintStream;
+
+public class ForEachTest1
+{
+
+    public ForEachTest1()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        String args1[] = {
+            "SCJP", "SCMAD", "SCWCD"
+        };
+        for(int i = 0; i < args1.length; i++)
+            System.out.print((new StringBuilder()).append(args1[i]).append(",").toString());
+
+        System.out.println();
+        String args2[] = args1;
+        int j = args2.length;
+        for(int k = 0; k < j; k++)
+        {
+            String s = args2[k];
+            System.out.print((new StringBuilder()).append(s).append(",").toString());
+        }
+
+    }
+}

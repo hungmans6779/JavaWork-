@@ -1,0 +1,41 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/3 ¤U¤È 07:05:53
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   SwitchTest2.java
+
+import java.io.PrintStream;
+
+public class SwitchTest2
+{
+
+    public SwitchTest2()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        byte byte0 = 65;
+        switch(byte0)
+        {
+        case 1: // '\001'
+            System.out.println("A");
+            break;
+
+        case 49: // '1'
+            System.out.println("B");
+            break;
+
+        case 65: // 'A'
+            System.out.println("C");
+            break;
+
+        case 20013: 
+            System.out.println("D");
+            break;
+
+        default:
+            System.out.println("E");
+            break;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/4 ¤U¤È 03:29:58
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   Week.java
+
+
+public final class Week extends Enum
+{
+
+    public static Week[] values()
+    {
+        return (Week[])$VALUES.clone();
+    }
+
+    public static Week valueOf(String s)
+    {
+        return (Week)Enum.valueOf(Week, s);
+    }
+
+    private Week(String s, int i)
+    {
+        super(s, i);
+    }
+
+    public static void main(String args[])
+    {
+    }
+
+    public static final Week Sunday;
+    public static final Week Monday;
+    public static final Week Tuesday;
+    public static final Week Wednesday;
+    public static final Week Thursday;
+    public static final Week Friday;
+    public static final Week Saturday;
+    private static final Week $VALUES[];
+
+    static 
+    {
+        Sunday = new Week("Sunday", 0);
+        Monday = new Week("Monday", 1);
+        Tuesday = new Week("Tuesday", 2);
+        Wednesday = new Week("Wednesday", 3);
+        Thursday = new Week("Thursday", 4);
+        Friday = new Week("Friday", 5);
+        Saturday = new Week("Saturday", 6);
+        $VALUES = (new Week[] {
+            Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
+        });
+    }
+}

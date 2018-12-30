@@ -1,0 +1,55 @@
+public class Animalv9
+{
+ private int legs;
+ private String kind;
+ private static int count;
+ 
+ public Animalv9()
+ {
+  this(4);
+  //setLegs(4);
+  count++;
+ }
+ public Animalv9(int l)
+ {
+  setLegs(l);
+  count++;
+ }
+ public void eat()
+ {
+  System.out.println("Eating.....");
+ } 
+ public void move()
+ { 
+  System.out.println("Moving......");
+ }
+ public void setLegs(int l)
+ {
+  if (l==0 || l==2 || l==4)
+  {
+   legs=l;
+  }
+  else
+  {
+   //System.out.println("Wrong legs.......");
+  // throw new IllegalArgumentException("Wrong number of legs...");
+  throw new WrongLegNumberExceptionv9();
+  }
+ }
+ public int getLegs()
+ {
+   return legs;
+ }
+ public void setKind(String str)
+ {
+  kind=str;
+ }
+ public String getKind()
+ {
+  return kind;
+ }
+ public static int getCount()
+ {
+  return count;
+ }
+}

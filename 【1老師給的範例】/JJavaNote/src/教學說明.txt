@@ -1,0 +1,8 @@
+1.三個類別分別為package Note中之子package JJavaNotePackage及JMyClockPackage.
+2.將三個類別compile後之class檔分置於各自的資料中.
+3.執行 jar cvf Note.jar Note 將package Note 及其子package一起壓縮為NoteGroup.jar檔(檔名不一定要和package同名).
+4.設定path=C:\Program Files\Java\jre1.5.0_04\bin,但該電腦須先安裝JRE5.0(JDK5.0).
+4.設定classpath=.\NoteGroup.jar 表示為本資料夾中之Note.jar檔.
+5.執行java Note.JJavaNotePackage.JJavaNote (要執行的class檔要包含完整的package路徑).
+6.將路徑切換至java檔之資料夾(src) 輸入 "javadoc -private -d NoteDoc Note *" 
+	"javadoc -private以下(含)層級之成員 -d 目的資料夾 package名稱 所有子package" 來製作說明文件

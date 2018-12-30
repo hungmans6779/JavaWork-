@@ -1,0 +1,35 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/3 ¤U¤È 10:32:26
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   VarargTest1.java
+
+import java.io.PrintStream;
+
+public class VarargTest1
+{
+
+    public VarargTest1()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        (new VarargTest1()).calc(new int[] {
+            1, 2, 3
+        });
+    }
+
+    transient void calc(int ai[])
+    {
+        int i = 0;
+        int ai1[] = ai;
+        int j = ai1.length;
+        for(int k = 0; k < j; k++)
+        {
+            int l = ai1[k];
+            i += l;
+        }
+
+        System.out.println((new StringBuilder()).append("sum=").append(i).toString());
+    }
+}

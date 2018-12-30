@@ -1,0 +1,34 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/6 ¤U¤È 10:14:28
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   GenericsTest9.java
+
+import java.io.PrintStream;
+import java.util.Iterator;
+import java.util.Vector;
+
+public class GenericsTest9
+{
+
+    public GenericsTest9()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        Vector vector = new Vector();
+        vector.add(Integer.valueOf(100));
+        vector.add(Integer.valueOf(200));
+        vector.add(Integer.valueOf(300));
+        System.out.println((new StringBuilder()).append("sum=").append(getSum(vector)).toString());
+    }
+
+    public static int getSum(Vector vector)
+    {
+        int i = 0;
+        for(Iterator iterator = vector.iterator(); iterator.hasNext();)
+            i += ((Number)iterator.next()).intValue();
+
+        return i;
+    }
+}

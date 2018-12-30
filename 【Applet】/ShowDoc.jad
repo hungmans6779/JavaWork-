@@ -1,0 +1,37 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/9/3 ¤W¤È 11:42:10
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   ShowDoc.java
+
+import java.applet.Applet;
+import java.applet.AppletContext;
+import java.io.PrintStream;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+public class ShowDoc extends Applet
+{
+
+    public ShowDoc()
+    {
+    }
+
+    public void init()
+    {
+        ac = getAppletContext();
+    }
+
+    public void start()
+    {
+        try
+        {
+            ac.showDocument(new URL("http://www.slime.com.tw"));
+        }
+        catch(MalformedURLException malformedurlexception)
+        {
+            System.out.println(malformedurlexception.toString());
+        }
+    }
+
+    AppletContext ac;
+}

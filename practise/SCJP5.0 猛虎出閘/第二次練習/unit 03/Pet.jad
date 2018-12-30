@@ -1,0 +1,16 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/4 ¤W¤È 10:20:05
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   Pet.java
+
+
+public interface Pet
+{
+
+    public abstract void skill();
+
+    public abstract void move();
+
+    public static final String attr = "cute";
+    public static final String name = "ABC";
+}

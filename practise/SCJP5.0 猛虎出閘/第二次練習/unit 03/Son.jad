@@ -1,0 +1,15 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/4 ¤W¤È 08:52:25
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   ExtendsTest2.java
+
+import java.io.PrintStream;
+
+class Son extends Father
+{
+
+    Son()
+    {
+        System.out.println("B");
+    }
+}

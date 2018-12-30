@@ -1,0 +1,31 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/4 ¤U¤È 10:01:34
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   InitializeTest1.java
+
+
+public class InitializeTest1
+{
+
+    InitializeTest1()
+    {
+        id = "A123456789";
+        birthday = 0x131f0b5;
+        name = "pcschool";
+    }
+
+    InitializeTest1(int i)
+    {
+        id = "A123456789";
+        birthday = 0x131f0b5;
+        name = "pcschool";
+    }
+
+    public static void main(String args[])
+    {
+    }
+
+    String id;
+    int birthday;
+    String name;
+}

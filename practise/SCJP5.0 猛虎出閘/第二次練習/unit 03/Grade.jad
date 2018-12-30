@@ -1,0 +1,49 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/4 ¤U¤È 02:35:40
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   EnumTest1.java
+
+
+class Grade extends Enum
+{
+
+    public static Grade[] values()
+    {
+        return (Grade[])$VALUES.clone();
+    }
+
+    public static Grade valueOf(String s)
+    {
+        return (Grade)Enum.valueOf(Grade, s);
+    }
+
+    private Grade(String s, int i)
+    {
+        super(s, i);
+    }
+
+
+    public static final Grade A;
+    public static final Grade B;
+    public static final Grade C;
+    public static final Grade D;
+    private static final Grade $VALUES[];
+
+    static 
+    {
+        A = new Grade("A", 0) {
+
+            public String toString()
+            {
+                return "Greet";
+            }
+
+        };
+        B = new Grade("B", 1);
+        C = new Grade("C", 2);
+        D = new Grade("D", 3);
+        $VALUES = (new Grade[] {
+            A, B, C, D
+        });
+    }
+}

@@ -1,0 +1,22 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/3 ¤U¤È 08:46:11
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   ConstructorTest3.java
+
+
+public class ConstructorTest3
+{
+
+    public ConstructorTest3()
+    {
+        i = 10;
+    }
+
+    public static void main(String args[])
+    {
+    }
+
+    int i;
+    static int si = 10;
+
+}

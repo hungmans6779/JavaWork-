@@ -1,0 +1,12 @@
+
+程式開始執行......
+Free/Total Memory (bytes):1829824/2031616
+
+建立obj1,obj2,obj3的MyObject的物件後......
+Free/Total Memory(bytes):1829824/2031616
+
+清除obj1,obj2,obj3的MyObject的物件後......
+Free/Total Memory(bytes):1885048/2031616
+GC : 3
+GC : 2
+GC : 1

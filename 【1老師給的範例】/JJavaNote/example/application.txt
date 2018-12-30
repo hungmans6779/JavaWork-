@@ -1,0 +1,7 @@
+import java.io.*;
+public class ClassName{
+	public static void main(String[] args)throws IOException{
+		//在此處輸入程式碼
+		
+	}
+}

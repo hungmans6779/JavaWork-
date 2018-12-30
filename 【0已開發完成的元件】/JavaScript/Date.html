@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>透過JavaScript產生日期下拉式選單</title>
+</head>  
+<body >
+
+ <!-- 表單一 -->  
+ <!--  產生出生日期的下拉式選單 -->
+ <script language="javascript">
+  <!--
+    var dd=31;
+	<!-- showBirthday() 是用來產生年、月、日的下接式選單 -->
+   function showForm1Birthday()
+   {
+    var nowData=new Date();
+    
+    //輸出年份的下拉式選單
+    document.write("<select name=year onChange=changeForm1Day() >");  
+    <!-- nowData.getYear() 是用來計算出今年是西元幾年 -->
+    for(i=(nowData.getYear()-110);i<=nowData.getYear();i++)
+	 document.write("<option value="+i+">"+i+"</option>");
+	document.write("</select>");
+	document.write("年 ");
+	
+
+    //輸出月份的下拉式選單
+    document.write("<select name=month onChange=changeForm1Day() >");  
+    for(i=1;i<=12;i++)
+	 document.write("<option value="+i+">"+i+"</option>");
+	document.write("</select>");
+	document.write("月 ");
+	 
+    //輸出天數的下拉式選單 
+    document.write("<select name=day >");  
+    for(i=1;i<=dd;i++)
+	document.write("<option value="+i+">"+i+"</option>");
+    document.write("</select>"); 
+    document.write("日");
+   }  
+   
+   <!-- changeForm1Day() 是用來當選單選擇了年或日時，判斷出該改變年月所對應的天數 -->
+   function changeForm1Day()
+   {
+    var dd=31;
+	var _year=Form1.year.value;
+	var _month=Form1.month.value;
+	switch(_month)
+	{
+	 case "2":
+	   if(_year%4==0 && _year%100!=0 || _year%400==0)
+	    dd=29;
+	   else
+	    dd=28;
+	  break;
+	 case "4":
+	 case "6":
+	 case "9":
+	 case "11":
+	  dd=30;   
+	  break;
+	}
+	for(i=31;i>=0;i--)
+	 Form1.day.remove(i);
+	 
+	for(i=1;i<=dd;i++)
+	 Form1.day.add(new Option(i,i-1));
+  }
+   -->
+  </script>
+ 
+  <form name=Form1 >
+  出生日期：
+  <script language="javascript">
+  <!--
+     showForm1Birthday();
+  -->
+  </script>
+  </form>
+
+</body>
+</html>
+

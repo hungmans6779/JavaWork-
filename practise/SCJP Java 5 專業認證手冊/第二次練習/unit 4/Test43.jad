@@ -1,0 +1,37 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/17 ¤U¤È 11:07:04
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   Test43.java
+
+import java.io.PrintStream;
+
+public class Test43
+{
+
+    public Test43()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        byte byte0 = 2;
+        switch(byte0)
+        {
+        case 1: // '\001'
+            System.out.println("1");
+            break;
+
+        case 2: // '\002'
+            System.out.println("2");
+            break;
+
+        case 127: // '\177'
+            System.out.println("127");
+            break;
+
+        default:
+            System.out.println("default");
+            break;
+        }
+    }
+}

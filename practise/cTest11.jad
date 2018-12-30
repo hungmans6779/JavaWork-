@@ -1,0 +1,17 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/6/25 ¤W¤È 10:51:43
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   cTest11.java
+
+
+public abstract class cTest11
+{
+
+    public cTest11()
+    {
+    }
+
+    public abstract void method();
+
+    public static final int i = 10;
+}

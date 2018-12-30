@@ -1,0 +1,24 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/8 ¤U¤È 07:08:21
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   Test3.java
+
+
+public class Test3
+{
+
+    public Test3()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        Character character = Character.valueOf('A');
+        Byte byte1 = Byte.valueOf((byte)10);
+        Short short1 = Short.valueOf((short)10);
+        Integer integer = Integer.valueOf(10);
+        Long long1 = Long.valueOf(10L);
+        Float float1 = Float.valueOf(10F);
+        Double double1 = Double.valueOf(10D);
+    }
+}

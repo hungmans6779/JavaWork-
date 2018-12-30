@@ -1,0 +1,13 @@
+SMAP
+useBeanTest1_jsp.java
+JSP
+*S JSP
+*F
++ 0 useBeanTest1.jsp
+useBeanTest1.jsp
+*L
+1,11:42
+12:53,10
+13:63,3
+14,3:66
+*E

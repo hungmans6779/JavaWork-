@@ -1,0 +1,91 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/7/2 ¤U¤È 02:48:56
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   cTest29.java
+
+import java.io.PrintStream;
+
+public class cTest29
+{
+    static final class week extends Enum
+    {
+
+        public static final week[] values()
+        {
+            return (week[])$VALUES.clone();
+        }
+
+        public static week valueOf(String s)
+        {
+            return (week)Enum.valueOf(cTest29$week, s);
+        }
+
+        public static final week _fld661F671F4E00;
+        public static final week _fld661F671F4E8C;
+        public static final week _fld661F671F4E09;
+        private static final week $VALUES[];
+
+        static 
+        {
+            _fld661F671F4E00 = new week("\u661F\u671F\u4E00", 0);
+            _fld661F671F4E8C = new week("\u661F\u671F\u4E8C", 1);
+            _fld661F671F4E09 = new week("\u661F\u671F\u4E09", 2);
+            $VALUES = (new week[] {
+                _fld661F671F4E00, _fld661F671F4E8C, _fld661F671F4E09
+            });
+        }
+
+        private week(String s, int i)
+        {
+            super(s, i);
+        }
+    }
+
+
+    public cTest29()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        static class _cls1
+        {
+
+            static final int $SwitchMap$cTest29$week[];
+
+            static 
+            {
+                $SwitchMap$cTest29$week = new int[week.values().length];
+                try
+                {
+                    $SwitchMap$cTest29$week[week._fld661F671F4E00.ordinal()] = 1;
+                }
+                catch(NoSuchFieldError nosuchfielderror) { }
+                try
+                {
+                    $SwitchMap$cTest29$week[week._fld661F671F4E8C.ordinal()] = 2;
+                }
+                catch(NoSuchFieldError nosuchfielderror1) { }
+            }
+        }
+
+        switch(_cls1..SwitchMap.cTest29.week[week.valueOf("\u661F\u671F\u4E00").ordinal()])
+        {
+        case 1: // '\001'
+            System.out.println("\u7334\u5B50\u7A7F\u65B0\u8863");
+            break;
+
+        case 2: // '\002'
+            System.out.println("\u7334\u5B50\u7A7F\u65B0\u8863");
+            break;
+        }
+        week aweek[] = week.values();
+        int i = aweek.length;
+        for(int j = 0; j < i; j++)
+        {
+            week week1 = aweek[j];
+            System.out.println(week1);
+        }
+
+    }
+}

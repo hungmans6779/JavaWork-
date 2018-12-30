@@ -1,0 +1,4 @@
+enum EnumTest1
+{
+ PINK,IVORY,ORANGE,WHITE,GOLDEN
+}

@@ -1,0 +1,65 @@
+<html>
+ <head>
+  <title>選擇日期的網站</title>
+ </head>
+ <body>
+   <!--
+    style的設定方式
+    1.顯示出年日期的年份下拉式選單	
+    2.顯示以行事曆為主的年份下拉式選單
+    3.顯示可以讓使用者直接設定起始年份和終止年份的年份下拉式選單
+    4.顯示前後各50年的下拉式選單
+   -->
+   
+   <!-- 顯示出生日期的設定選單 -->
+   <applet code="InputDateSelectApplet.class" width=350 height=70 >
+    <param name="label" value="出生日期" >
+    <param name="style" value="1" >
+    <param name="start_year" value="0">
+    <param name="end_year" value="0">
+   </applet>
+   <hr>
+   
+   <!-- 顯示請假的日期設定選單 -->
+   <applet code="InputDateSelectApplet.class" width=350 height=70 >
+    <param name="label" value="請假日期" >
+    <param name="style" value="2" >
+    <param name="start_year" value="0">
+    <param name="end_year" value="0">
+   </applet>
+   <applet code="InputDateSelectApplet.class" width=350 height=70 >
+    <param name="label" value="收假日期" >
+    <param name="style" value="2" >
+    <param name="start_year" value="0">
+    <param name="end_year" value="0">
+   </applet>
+   <hr>
+   
+   
+   <!-- 顯示由使用者設定的日期選單 -->
+   <applet code="InputDateSelectApplet.class" width=350 height=70 >
+    <param name="label" value="日期" >
+    <param name="style" value="3" >
+    <param name="start_year" value="1000">
+    <param name="end_year" value="3000">
+   </applet>
+   <hr>
+   
+   
+   <!-- 顯示開訓及結訓的日期設定選單 -->
+   <applet code="InputDateSelectApplet.class" width=350 height=70 >
+    <param name="label" value="開訓日期" >
+    <param name="style" value="4" >
+    <param name="start_year" value="0">
+    <param name="end_year" value="0">
+   </applet>
+   <applet code="InputDateSelectApplet.class" width=350 height=70 >
+    <param name="label" value="結訓日期" >
+    <param name="style" value="4" >
+    <param name="start_year" value="0">
+    <param name="end_year" value="0">
+   </applet>
+   <hr>
+   
+ </body>
+</html>

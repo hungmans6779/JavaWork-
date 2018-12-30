@@ -1,0 +1,37 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/8 ¤U¤È 08:01:46
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   AutoBoxSwitchTest1.java
+
+import java.io.PrintStream;
+
+public class AutoBoxSwitchTest1
+{
+
+    public AutoBoxSwitchTest1()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        Integer integer = Integer.valueOf(100);
+        switch(integer.intValue())
+        {
+        case 10: // '\n'
+            System.out.println("10");
+            break;
+
+        case 100: // 'd'
+            System.out.println("100");
+            break;
+
+        case 110: // 'n'
+            System.out.println("110");
+            break;
+
+        default:
+            System.out.println("\u672A\u77E5\u6578");
+            break;
+        }
+    }
+}

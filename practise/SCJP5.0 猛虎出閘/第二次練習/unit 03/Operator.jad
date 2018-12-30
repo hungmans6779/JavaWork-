@@ -1,0 +1,54 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2007/4/4 ¤U¤È 03:29:33
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   Operator.java
+
+
+public abstract class Operator extends Enum
+{
+
+    public static Operator[] values()
+    {
+        return (Operator[])$VALUES.clone();
+    }
+
+    public static Operator valueOf(String s)
+    {
+        return (Operator)Enum.valueOf(Operator, s);
+    }
+
+    private Operator(String s, int i)
+    {
+        super(s, i);
+    }
+
+    abstract int operate(int i);
+
+
+    public static final Operator PLUSONE;
+    public static final Operator ABS;
+    private static final Operator $VALUES[];
+
+    static 
+    {
+        PLUSONE = new Operator("PLUSONE", 0) {
+
+            int operate(int i)
+            {
+                return i;
+            }
+
+        };
+        ABS = new Operator("ABS", 1) {
+
+            public int operate(int i)
+            {
+                return i;
+            }
+
+        };
+        $VALUES = (new Operator[] {
+            PLUSONE, ABS
+        });
+    }
+}
